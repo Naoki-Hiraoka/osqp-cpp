@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.10)
 
 project(osqp-cpp)
 
@@ -24,7 +24,7 @@ option(OSQP-CPP_BUILD_TESTS
   "Whether to build tests." ON
 )
 
-include(FetchContent)
+include(FetchContent OPTIONAL)
 
 # ABSL
 if (NOT TARGET absl::strings OR NOT TARGET absl::status OR NOT TARGET absl::span)
