@@ -24,7 +24,9 @@
 #include "absl/strings/string_view.h"
 #include "Eigen/Core"
 #include "Eigen/SparseCore"
+#ifdef CTRLC
 #include "ctrlc.h"
+#endif
 #include "osqp.h"
 #include "osqp++.h"
 

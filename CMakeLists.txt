@@ -24,7 +24,7 @@ option(OSQP-CPP_BUILD_TESTS
   "Whether to build tests." ON
 )
 option (CTRLC "Enable user interrupt (Ctrl-C)" ON)
-if(CTRCL)
+if(CTRLC)
   add_compile_definitions(CTRLC)
 endif()
 
